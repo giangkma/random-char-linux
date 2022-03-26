@@ -1,6 +1,6 @@
 # Tìm hiểu về Linux kernel
 
-## `randocha`
+## `randomchar`
 
 ### Hướng dẫn nhanh
 
@@ -9,13 +9,13 @@
 $ make
 
 // Nạp module
-# insmod randocha.ko
+# insmod randomchar.ko
 
 // Chạy user tool để thử
 # ./user_space
 
 // Gỡ module
-# rmmod randocha
+# rmmod randomchar
 
 // Dọn dẹp
 $ make clean
@@ -26,4 +26,4 @@ $ make clean
 
 ![image-20200619204001401](README.images/image-20200619204001401.png)
 
-Hình: `randocha_module` đã được nạp thành công; công cụ test đã được gọi 4 lần.
+Hình: `randomchar_module` đã được nạp thành công; công cụ test đã được gọi 4 lần.

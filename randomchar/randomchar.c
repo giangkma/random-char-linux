@@ -8,7 +8,7 @@
 #include <linux/device.h>
 
 #define MAX (int)1e9
-#define DEV_NAME "randocha"
+#define DEV_NAME "randomchar"
 #define CHAR_DEV_NAME "RC"
 
 static int major_number;
@@ -33,7 +33,7 @@ static struct file_operations fops =
         .release = dev_release,
 };
 
-static int __init randocha_init(void)
+static int __init randomchar_init(void)
 {
     major_number = register_chrdev(0, DEV_NAME, &fops);
     if (major_number < 0)
@@ -65,7 +65,7 @@ static int __init randocha_init(void)
     return 0;
 }
 
-static void __exit randocha_exit(void)
+static void __exit randomchar_exit(void)
 {
     // Rules: unregister before destroy
     // device_unregister(device_class);
@@ -106,5 +106,5 @@ static int dev_release(struct inode *inodep, struct file *filep)
     return 0;
 }
 
-module_init(randocha_init); // plug in
-module_exit(randocha_exit); // plug out
+module_init(randomchar_init); // plug in
+module_exit(randomchar_exit); // plug out

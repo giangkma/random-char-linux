@@ -1,4 +1,4 @@
-obj-m        += randocha_module.o
+obj-m        += randomchar.o
 KDIR		 = /lib/modules/$(shell uname -r)/build
 EXTRA_CFLAGS = -Wall
 
