@@ -1,4 +1,4 @@
-# Tìm hiểu về Linux kerneldd
+# Tìm hiểu về Linux kernelddd
 
 ## `randomchar`
 
