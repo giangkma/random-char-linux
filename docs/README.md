@@ -1,5 +1,5 @@
 # Tìm hiểu về Linux kernel
-dd
+
 ## `randomchar`
 
 ### Hướng dẫn nhanh
